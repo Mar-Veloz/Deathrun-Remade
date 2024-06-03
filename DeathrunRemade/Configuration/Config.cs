@@ -273,7 +273,7 @@ namespace DeathrunRemade.Configuration
                 description: "Harder recipes for vehicles and vehicle modules."
             ).WithChoiceOptionStringsOverride(
                 "Normal (No changes)",
-                "Hard (No changes to modules)",
+                "Hard",
                 "Deathrun",
                 "Kharaa"
             ).WithDescription("Vehicle Costs");
