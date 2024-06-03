@@ -793,16 +793,16 @@
           "amount": 1
         },
         {
-          "techType": "EnameledGlass",
+          "techType": "Glass",
           "amount": 2
         },
         {
           "techType": "Lubricant",
-          "amount": 3
+          "amount": 2
         },
         {
           "techType": "Lead",
-          "amount": 4
+          "amount": 2
         }
       ]
     },
@@ -815,27 +815,23 @@
           "amount": 2
         },
         {
-          "techType": "Aerogel",
+          "techType": "EnameledGlass",
           "amount": 2
         },
         {
-          "techType": "EnameledGlass",
-          "amount": 1
+          "techType": "Lubricant",
+          "amount": 2
+        },
+        {
+          "techType": "Aerogel",
+          "amount": 2
         },
         {
           "techType": "Diamond",
           "amount": 2
         },
         {
-          "techType": "Sulphur",
-          "amount": 2
-        },
-        {
           "techType": "Nickel",
-          "amount": 2
-        },
-        {
-          "techType": "Lubricant",
           "amount": 2
         }
       ]
@@ -867,10 +863,152 @@
         {
           "techType": "UraniniteCrystal",
           "amount": 2
+        }
+      ]
+    },
+    {
+      "techType": "VehicleHullModule1",
+      "craftAmount": 1,
+      "ingredients": [
+        {
+          "techType": "PlasteelIngot",
+          "amount": 1
+        },
+        {
+          "techType": "Magnetite",
+          "amount": 2
+        },
+        {
+          "techType": "EnameledGlass",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "techType": "VehicleHullModule2",
+      "craftAmount": 1,
+      "ingredients": [
+        {
+          "techType": "VehicleHullModule1",
+          "amount": 1
+        },
+        {
+          "techType": "PlasteelIngot",
+          "amount": 1
+        },
+        {
+          "techType": "AluminumOxide",
+          "amount": 3
+        },
+        {
+          "techType": "EnameledGlass",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "techType": "VehicleHullModule3",
+      "craftAmount": 1,
+      "ingredients": [
+        {
+          "techType": "VehicleHullModule2",
+          "amount": 1
+        },
+        {
+          "techType": "PlasteelIngot",
+          "amount": 1
+        },
+        {
+          "techType": "Sulphur",
+          "amount": 2
+        },
+        {
+          "techType": "EnameledGlass",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "techType": "ExoHullModule1",
+      "craftAmount": 1,
+      "ingredients": [
+        {
+          "techType": "PlasteelIngot",
+          "amount": 1
         },
         {
           "techType": "Nickel",
-          "amount": 2
+          "amount": 3
+        },
+        {
+          "techType": "Sulphur",
+          "amount": 3
+        },
+        {
+          "techType": "Kyanite",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "techType": "CyclopsHullModule1",
+      "craftAmount": 1,
+      "ingredients": [
+        {
+          "techType": "PlasteelIngot",
+          "amount": 1
+        },
+        {
+          "techType": "AluminumOxide",
+          "amount": 3
+        },
+        {
+          "techType": "Nickel",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "techType": "CyclopsHullModule2",
+      "craftAmount": 1,
+      "ingredients": [
+        {
+          "techType": "CyclopsHullModule1",
+          "amount": 1
+        },
+        {
+          "techType": "PlasteelIngot",
+          "amount": 1
+        },
+        {
+          "techType": "Sulphur",
+          "amount": 3
+        },
+        {
+          "techType": "Kyanite",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "techType": "CyclopsHullModule3",
+      "craftAmount": 1,
+      "ingredients": [
+        {
+          "techType": "CyclopsHullModule2",
+          "amount": 1
+        },
+        {
+          "techType": "Sulphur",
+          "amount": 3
+        },
+        {
+          "techType": "Nickel",
+          "amount": 3
+        },
+        {
+          "techType": "Kyanite",
+          "amount": 5
         }
       ]
     }
