@@ -897,19 +897,7 @@
           "amount": 4
         },
         {
-          "techType": "TreeMushroomPiece",
-          "amount": 1
-        },
-        {
-          "techType": "KooshChunk",
-          "amount": 1
-        },
-        {
-          "techType": "RedGreenTentacleSeed",
-          "amount": 1
-        },
-        {
-          "techType": "EyesPlantSeed",
+          "techType": "Aerogel",
           "amount": 1
         }
       ]
