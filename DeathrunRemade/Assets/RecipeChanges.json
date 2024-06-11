@@ -202,14 +202,18 @@
       "ingredients": [
         {
           "techType": "ComputerChip",
-          "amount": 2
+          "amount": 1
         },
         {
-          "techType": "WiringKit",
-          "amount": 2
+          "techType": "AdvancedWiringKit",
+          "amount": 1
         },
         {
           "techType": "Lithium",
+          "amount": 1
+        },
+        {
+          "techType": "Magnetite",
           "amount": 1
         }
       ]
@@ -400,11 +404,11 @@
       "ingredients": [
         {
           "techType": "ComputerChip",
-          "amount": 2
+          "amount": 1
         },
         {
-          "techType": "WiringKit",
-          "amount": 2
+          "techType": "AdvancedWiringKit",
+          "amount": 1
         },
         {
           "techType": "Lithium",
@@ -412,7 +416,7 @@
         },
         {
           "techType": "Magnetite",
-          "amount": 1
+          "amount": 2
         }
       ]
     },
@@ -606,11 +610,11 @@
       "ingredients": [
         {
           "techType": "ComputerChip",
-          "amount": 2
+          "amount": 1
         },
         {
-          "techType": "WiringKit",
-          "amount": 2
+          "techType": "AdvancedWiringKit",
+          "amount": 1
         },
         {
           "techType": "Lithium",
@@ -618,7 +622,7 @@
         },
         {
           "techType": "Magnetite",
-          "amount": 1
+          "amount": 2
         }
       ]
     },
@@ -793,7 +797,7 @@
           "amount": 1
         },
         {
-          "techType": "Glass",
+          "techType": "EnameledGlass",
           "amount": 2
         },
         {
@@ -803,6 +807,10 @@
         {
           "techType": "Lead",
           "amount": 2
+        },
+        {
+          "techType": "Aerogel",
+          "amount": 1
         }
       ]
     },
@@ -1036,6 +1044,10 @@
         },
         {
           "techType": "Aerogel",
+          "amount": 2
+        },
+        {
+          "techType": "Polyaniline",
           "amount": 1
         }
       ]
@@ -1277,11 +1289,23 @@
           "amount": 4
         },
         {
-          "techType": "HydrochloricAcid",
-          "amount": 3
+          "techType": "Aerogel",
+          "amount": 2
         },
         {
-          "techType": "Aerogel",
+          "techType": "TreeMushroomPiece",
+          "amount": 1
+        },
+        {
+          "techType": "KooshChunk",
+          "amount": 1
+        },
+        {
+          "techType": "RedGreenTentacleSeed",
+          "amount": 1
+        },
+        {
+          "techType": "EyesPlantSeed",
           "amount": 1
         }
       ]
