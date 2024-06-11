@@ -238,9 +238,9 @@ namespace DeathrunRemade.Patches
         {
             float divisor = SaveData.Main.Config.PowerCosts switch
             {
-                Difficulty4.Hard => 1f,
-                Difficulty4.Deathrun => 2f,
-                Difficulty4.Kharaa => 3f,
+                Difficulty4.Hard => 3f,
+                Difficulty4.Deathrun => 5f,
+                Difficulty4.Kharaa => 6f,
                 _ => 1f
             };
             // In radiation, double all power costs.
