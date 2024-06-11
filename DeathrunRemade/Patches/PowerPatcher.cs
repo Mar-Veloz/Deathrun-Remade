@@ -144,7 +144,7 @@ namespace DeathrunRemade.Patches
                 return;
             
             // Can only be seamoth or prawn at this point.
-            float divisor = GetVehicleExitCostDiv(difficulty, _ejectedVehicle is SeaMoth);
+            float divisor = GetVehicleExitCostDiv(difficulty);
             // Energy cost increases with depth and difficulty. At 100 depth, exiting Seamoth costs 10 power on Deathrun.
             float energyCost = depth / divisor;
             // Flat extra cost on top, absolutely crippling at the highest levels.
@@ -199,7 +199,7 @@ namespace DeathrunRemade.Patches
         /// <summary>
         /// Get the divisor used for calculating the power cost of exiting a vehicle at depth.
         /// </summary>
-        public static float GetVehicleExitCostDiv(Difficulty4 difficulty, bool isSeaMoth)
+        public static float GetVehicleExitCostDiv(Difficulty4 difficulty)
         {
             float difficultyMult = difficulty switch
             {
@@ -208,8 +208,7 @@ namespace DeathrunRemade.Patches
                 Difficulty4.Kharaa => 2.5f,
                 _ => throw new ConfigEntryException($"Invalid value for {difficulty.GetType()}: {difficulty.ToString()}")
             };
-            float vehicleMult = isSeaMoth ? 1f : 2f;
-            return difficultyMult * vehicleMult;
+            return difficultyMult;
         }
 
         /// <summary>
