@@ -324,9 +324,9 @@ namespace DeathrunRemade.Configuration
                              + "Decompression Modules."
             ).WithChoiceOptionStringsOverride(
                 "Normal (No changes)",
-                $"Hard (Depth / {PowerPatcher.GetVehicleExitCostDiv(Difficulty4.Hard, true)})",
-                $"Deathrun (Depth / {PowerPatcher.GetVehicleExitCostDiv(Difficulty4.Deathrun, true)})",
-                $"Kharaa (Depth / {PowerPatcher.GetVehicleExitCostDiv(Difficulty4.Kharaa, true)})"
+                $"Hard (Depth / {PowerPatcher.GetVehicleExitCostDiv(Difficulty4.Hard)})",
+                $"Deathrun (Depth / {PowerPatcher.GetVehicleExitCostDiv(Difficulty4.Deathrun)})",
+                $"Kharaa (Depth / {PowerPatcher.GetVehicleExitCostDiv(Difficulty4.Kharaa)})"
             ).WithDescription("Power Loss on Vehicle Exit");
         }
 
