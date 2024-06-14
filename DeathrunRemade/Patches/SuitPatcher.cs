@@ -2,6 +2,7 @@ using DeathrunRemade.Items;
 using DeathrunRemade.Objects.Attributes;
 using DeathrunRemade.Objects.Enums;
 using HarmonyLib;
+using UnityEngine;
 
 namespace DeathrunRemade.Patches
 {
@@ -47,5 +48,44 @@ namespace DeathrunRemade.Patches
             if (__instance.temperatureDamage.minDamageTemperature < limit)
                 __instance.temperatureDamage.minDamageTemperature = limit;
         }
+
+        /// <summary>
+        /// Set textures properly for the custom suits, so they don't just use the default suit texture
+        /// when worn.
+        /// </summary>
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(Player), nameof(Player.EquipmentChanged))]
+        private static void UpdateSuitTextures() {
+            TechType suit = Inventory.main.equipment.GetTechTypeInSlot("Body");
+
+            // Determine the suit appearance we want to clone,
+            // or do nothing if not wearing a custom suit.
+            string suitClonePath;
+            if (suit == ReinforcedSuitMk2.s_TechType || suit == ReinforcedSuitMk3.s_TechType) {
+                suitClonePath = "reinforcedSuit/reinforced_suit_01_body_geo";
+            } else if (suit == ReinforcedFiltrationSuit.s_TechType) {
+                suitClonePath = "stillSuit/still_suit_01_body_geo";
+            } else {
+                return;
+            }
+
+            string defaultTextureName = "_MainTex";
+
+            // Get GameObjects for the default suit and the suit we want to clone.
+            Transform geo = Player.main.transform.Find("body/player_view/male_geo");
+            GameObject cloneSuit = geo.Find(suitClonePath).gameObject;
+            GameObject defaultSuit = geo.Find("diveSuit/diveSuit_body_geo").gameObject;
+            // Get renderer and texture for the clone suit.
+            Renderer renderer = cloneSuit.GetComponent<Renderer>();
+            Texture texture = renderer.material.GetTexture(defaultTextureName);
+
+            // Activate the model for the clone suit, and deactivate the default suit model.
+            cloneSuit.SetActive(true);
+            defaultSuit.SetActive(false);
+
+            // Set the suit texture.
+            renderer.materials[0].SetTexture(defaultTextureName, (Texture2D)texture);
+        }
     }
+
 }
